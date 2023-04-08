@@ -1,0 +1,110 @@
+
+
+.wrapper {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.personal__data, .contacts, .target {
+    padding: 10px;
+    border: 1px solid #0000004f;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.personal__data {
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.target {
+    flex-direction: column;
+    height: 300px;
+}
+
+.blank{
+    width: 28%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.blank input {
+    width: 100%;
+    height: 25px;
+}
+
+.documents {
+    margin-top: 30px;
+    flex-direction: row;
+}
+
+.contact {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    flex-direction: column;
+}
+
+.wrapper p {
+    font-weight: 700;
+    font-size: 26px;
+    color: #6BDD11;
+    margin: 10px 0;
+}
+
+.box1{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box__title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #000000;
+}
+
+.direction {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.direction input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background: rgba(112, 238, 13, 0.68);
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
