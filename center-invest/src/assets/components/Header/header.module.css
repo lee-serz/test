@@ -1,8 +1,9 @@
 .wrapper{ 
-
+    width: 100%;
 }
 
 .header {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
@@ -59,4 +60,23 @@
 
 .enterance:hover {
     opacity: .8;
+}
+
+@media screen and (max-width: 980px) {    
+    .menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {    
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        background: url('../../images/logo.png');
+    }
+    .header {
+        padding: 0px 10px;
+    }
 }

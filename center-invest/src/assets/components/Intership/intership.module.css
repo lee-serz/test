@@ -1,4 +1,5 @@
 .wrapper {
+    width: 100%;
     padding-bottom: 60px;
 }
 
@@ -11,6 +12,7 @@
 }
 
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,4 +56,20 @@
 
 .item__description {
     font-size: 20px;
+}
+
+/*  АДАПТИВКА  */
+@media screen and (max-width: 980px) {    
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .item {
+        width: 90%;
+        height: 300px;
+    }
+
 }

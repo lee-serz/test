@@ -10,6 +10,6 @@ import RegisterForm from './assets/components/RegisterForm/RegisterForm'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RegisterForm />
+    <Form />
   </React.StrictMode>
 )
