@@ -12,6 +12,7 @@
     font-size: 36px;
     color: #6BDD11;
     margin: 20px 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 .subtitle{

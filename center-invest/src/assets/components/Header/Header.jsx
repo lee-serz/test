@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from "./header.module.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function Header() {
           <div className={styles.menu__item}>Практики</div>
           <div className={styles.menu__item}>Вакансии</div>
         </div>
-        <div className={styles.enterance}>Войти</div>
+        <Link className={styles.enterance} to='/login'>Войти</Link>
       </div>
     </div>
   )

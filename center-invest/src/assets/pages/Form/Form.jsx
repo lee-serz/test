@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from "axios";
 import styles from './form.module.css'
+import Test from '../../components/TestPage/Test';
 
 
 
@@ -196,13 +197,13 @@ const Form = () => {
                 </div>
            </div>
            <div className={styles.buttons}>
-            <div className={styles.btn}>
-                    Пройти тестирование
-            </div>
+           <Test></Test>
             <button className={styles.btn} type="submit">Сохранить</button>
            </div>
         </form>
+       
     </div>
+    
   );
 };
 

@@ -4,12 +4,20 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    background: #fff;
+    
+}
+
+.image_wrapper {
+    background: #fff;
 }
 
 .wrapper h1 {
+    margin-top: 40px;
     color: #6BDD11;
     padding-bottom: 30px;
 }
+
 
 
 .form {
@@ -20,7 +28,7 @@
     align-items: center;
     width: 100%;
     max-width: 600px;
-    height: 450px;
+    height: 500px;
     background: #EFEEEE;
     border-radius: 5px;
 }
@@ -30,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .blank input {
@@ -51,7 +59,7 @@
     border: none;
     font-weight: 700;
     font-size: 1rem;
-    margin: 5px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     cursor: pointer;
     transition: ease-in-out .2s all;
 }
@@ -75,18 +83,24 @@
 .image{ 
     width: 350px;
     height: 100px;
+    transition: ease-in-out .2s all;
+}
+
+.image:hover {
+    opacity: .8;
 }
 
 /*  АДАПТИВКА  */
 @media screen and (max-width: 980px) {
     .wrapper {
-        padding: 0px  30px;
+        padding: 0px 30px;
     }
 
     .form {
+        padding-top: 15px;
         width: 100%;
         max-width: 400px;
-        height: 450px;
+        height: 550px;
     }
 
     .blank {
