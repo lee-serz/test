@@ -39,13 +39,11 @@ function Intership() {
                     </div>
 
                     <div className={styles.back}>
-                        <div className={styles.content}>
-                            <h3 className={styles.cardTitle}>Системный аналитик</h3>
-                            <div className={styles.item__description}>
-                                <p>{internship.requirements}</p>
-                            </div>   
-                            <Link to='/form' className={styles.request}>Подать заявку</Link>
-                        </div>
+                        <h3 className={styles.cardTitle}>{internship.title}</h3>
+                        <div className={styles.item__description}>
+                            <p>{internship.requirements}</p>
+                        </div>   
+                        <Link to='/form' className={styles.request}>Подать заявку</Link>
                     </div>
                 </div>
                 ))}

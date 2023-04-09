@@ -99,6 +99,7 @@ body {
   }
   
   p {
+    display: block;
     margin-bottom: 1em;
   }
   
@@ -117,11 +118,10 @@ body {
   .cardContainer 
   {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -139,6 +139,9 @@ body {
   }
   
   .request {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
@@ -163,8 +166,14 @@ body {
   
   .card 
   {
-    width: 45%;
-    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    height: 450px;
     cursor: pointer;
     border: 5px solid #6BDD11;
     border-radius: 15px;
@@ -190,13 +199,13 @@ body {
   
   .card .front,
   .card .back {
+    box-sizing: border-box;
+    padding: 15px;
     display: block;
     height: 100%;
     width: 100%;
-    line-height: .5em;
     color: #000;
     text-align: center;
-    font-size: 4em;
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -210,8 +219,6 @@ body {
   .card .back {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
     font-size: 18px;
     text-align: left;
     line-height: 25px;
@@ -233,31 +240,14 @@ body {
   .cardContainer:first-child .card .back {
     background: transparent;
   }
-  
-  .cardContainer:nth-child(2) .card .front {
-    background: transparent;
+
+  .back {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 5%;
+    font-weight: 500;
   }
-  .cardContainer:nth-child(2) .card .back {
-    background: transparent;
-  }
-  
-  .cardContainer:nth-child(3) .card .front {
-    background: transparent;
-  }
-  .cardContainer:nth-child(3) .card .back {
-    background: transparent;
-  }
-  
-  .cardContainer:nth-child(4) .card .front 
-  {
-    background: #AD103C;
-  }
-  .cardContainer:nth-child(4) .card .back 
-  {
-    background: #AD103C;
-  }
-  
-  
   
   h3.cardTitle {
     font-size: 24px;
@@ -268,11 +258,6 @@ body {
   .content h3.cardTitle
   {
     margin-top: 0%;
-  }
-  
-  .content {
-    padding: 4%;
-    font-weight: 500;
   }
 
   .list li {
