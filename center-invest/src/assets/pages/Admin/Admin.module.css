@@ -5,12 +5,50 @@
     padding: 20px;
   }
   
+  .adminPanel {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 50px 0px;
+  }
+
   .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 70px;
     background-color: #f1f1f1;
-    padding: 10px;
-    margin: 5px;
+    padding: 10px 50px 10px 50px;
+    margin: 15px 0px 15px 0px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: 500;
+    transition: ease-in-out .2s all;
+  }
+
+  .deleteButton {
+    background: rgba(112, 238, 13, 0.68);
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out .2s all;
+  }
+
+  .createButton {
+    background: rgba(112, 238, 13, 0.68);
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out .2s all;
+    margin-bottom: 30px;
+  }
+
+  .deleteButton:hover,  .createButton:hover {
+    background: rgba(133, 243, 49, 0.68);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
   }
   
   .item:hover {

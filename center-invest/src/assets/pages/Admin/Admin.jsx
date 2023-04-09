@@ -70,7 +70,8 @@ const Admin = () => {
 
   return (
     <div className={styles.container}>
-       <button onClick={toggleForm}>Создать стажировку</button>
+      <div className={styles.adminPanel}>Админ панель</div>
+      <button className={styles.createButton} onClick={toggleForm}>Создать стажировку</button>
     {showForm && (
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Название стажировки:</label>
@@ -91,8 +92,7 @@ const Admin = () => {
         <button type="submit">Отправить</button>
       </form>
     )}
-
-      <div>Админ панель</div>
+    
       {data.map((item) => (
       <div
         key={item.id}
@@ -100,7 +100,7 @@ const Admin = () => {
         onClick={() => fetchUserById(item.id)}
       >
         {item.firstName} {item.lastName} {item.patronymic}
-        <button onClick={() => deleteItem(item.id)}>Удалить</button>
+        <button className={styles.deleteButton} onClick={() => deleteItem(item.id)}>Удалить</button>
       </div>
     ))}
     {selectedUser && showDetails && (
