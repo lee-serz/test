@@ -300,6 +300,9 @@ body {
   }
   @media all and (max-width : 752px) {
    
+    .card {
+      height: 300px;
+    }
     .secondRow
     {
       margin-top: -3%;
@@ -318,7 +321,7 @@ body {
     .card
     {
         width:90%;
-        height: 250px;
+        height: 300px;
      
     }
     .secondRow

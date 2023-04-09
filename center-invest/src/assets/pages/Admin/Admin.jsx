@@ -75,24 +75,25 @@ const Admin = () => {
     {showForm && (
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Название стажировки:</label>
-        <input
+        <input  className={styles.intershipName}
           type="text"
           id="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <br />
-        <label htmlFor="requirements">Требования:</label>
+        <label htmlFor="requirements" >Требования:</label>
         <textarea
+          className={styles.intershipNeeds}
           id="requirements"
           value={requirements}
           onChange={(e) => setRequirements(e.target.value)}
         />
         <br />
-        <button type="submit">Отправить</button>
+        <button type="submit" className={styles.addButton}>Отправить</button>
       </form>
     )}
-    
+
       {data.map((item) => (
       <div
         key={item.id}
@@ -104,7 +105,7 @@ const Admin = () => {
       </div>
     ))}
     {selectedUser && showDetails && (
-      <div>
+      <div className={styles.info}>
         <h3>Выбранный пользователь:</h3>
         <p>Выбранное напрвление: {selectedUser.comment}</p>
         <p>Имя: {selectedUser.firstName}</p>
