@@ -57,7 +57,7 @@
 }
 
 .item__description {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*  АДАПТИВКА  */
@@ -160,7 +160,7 @@ body {
   }
 
   .cardImage{
-    width: 60%;
+    width: 80%;
 
   }
   
@@ -172,7 +172,7 @@ body {
     justify-content: space-between;
     position: relative;
     margin: 10px;
-    width: 30%;
+    width: 25%;
     height: 450px;
     cursor: pointer;
     border: 5px solid #6BDD11;
@@ -294,7 +294,7 @@ body {
     }
     .cardImage {
         width: 100%;
-        max-width: 200px;
+        max-width: 170px;
     }
   
   }
@@ -309,7 +309,7 @@ body {
       margin-top: 3%;
     }
     .cardImage {
-        max-width: 180px;
+        max-width: 150px;
     }
   
   }

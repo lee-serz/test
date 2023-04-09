@@ -51,6 +51,7 @@
 }
 
 .button {
+    box-sizing: border-box;
     font-family: 'Montserrat';
     width: 100%;
     max-width: 200px;;

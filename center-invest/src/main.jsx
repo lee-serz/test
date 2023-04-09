@@ -9,6 +9,6 @@ import Admin from './assets/pages/Admin/Admin'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Admin/>
+    <Router/>
   </React.StrictMode>
 )

@@ -54,18 +54,6 @@
     box-shadow: 2px 3px 16px rgba(0, 0, 0, .3);
 }
 
-#system-analitycs::after {
-    content: "";
-    display: inline-block;
-    margin-top: 2px;
-    margin-left: 10px;
-    width: 1em;
-    height: 1em;
-    background-image: url("./system-analitycs.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .item__description {
     font-size: 20px;
@@ -122,10 +110,6 @@ body {
     transition: all 0.3s ease;
   }
 
-  .content p
-  {   
-    font-weight: 300;
-  }
   .cardContainer 
   {
     margin: 0 auto;
@@ -167,16 +151,15 @@ body {
   }
 
   .cardImage{
-    width: 60%;
+    width: 90%;
 
   }
   
   .card 
   {
-    width: 40%;
-    height: 350px;
+    width: 25%;
+    height: 400px;
     cursor: pointer;
-    border: 5px solid #6BDD11;
     border-radius: 15px;
     /*transition effects */
     -webkit-transition: -webkit-transform 0.6s;
@@ -187,6 +170,7 @@ body {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    transition: ease-in-out .2s all;
   }
   
   .card.flipped 
@@ -199,12 +183,12 @@ body {
   
   .card .front,
   .card .back {
+    padding-left: 20px;
     display: block;
     height: 100%;
     width: 100%;
     line-height: 60px;
     color: #000;
-    text-align: center;
     font-size: 4em;
     position: absolute;
     -webkit-backface-visibility: hidden;
@@ -214,6 +198,10 @@ body {
     box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+
+  .card:hover {
+    height: 380px;
   }
   
   .card .back {
@@ -236,43 +224,15 @@ body {
   
   /*Colors for front and back applied here*/
   .cardContainer:first-child .card .front {
-    background: transparent;
+    background: rgba(107, 221, 17, 0.7);
   }
   
-  .cardContainer:first-child .card .back {
-    background: transparent;
-  }
-  
-  .cardContainer:nth-child(2) .card .front {
-    background: transparent;
-  }
-  .cardContainer:nth-child(2) .card .back {
-    background: transparent;
-  }
-  
-  .cardContainer:nth-child(3) .card .front {
-    background: transparent;
-  }
-  .cardContainer:nth-child(3) .card .back {
-    background: transparent;
-  }
-  
-  .cardContainer:nth-child(4) .card .front 
-  {
-    background: #AD103C;
-  }
-  .cardContainer:nth-child(4) .card .back 
-  {
-    background: #AD103C;
-  }
-  
-  
-  
+
   h3.cardTitle {
     font-size: 24px;
     line-height: 1.2em;
     margin-top: 8%;
-    font-weight: 600;
+    font-weight: 800;
   }
   .content h3.cardTitle
   {
@@ -287,9 +247,15 @@ body {
   .list li {
     margin-bottom: 10px;
   }
+
+
   @media all and (max-width: 1310px){
     .card {
-        width: 35%;
+      width: 35%;
+    }
+    .front {
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -300,6 +266,7 @@ body {
         font-weight: 500;
          
     }
+
     .content p
     {
       margin-top: -15%;
@@ -310,7 +277,7 @@ body {
     {
         margin-bottom: 20px;
         width: 60%;
-         height:280px;
+        height:280px;
     }
 
     .item__description {
@@ -319,6 +286,15 @@ body {
     .cardImage {
         width: 100%;
         max-width: 200px;
+    }
+
+    .front {
+      display: flex;
+      flex-direction:  row;
+    }
+
+    .front h3, .front img {
+      display: block;
     }
   
   }
@@ -333,18 +309,29 @@ body {
       margin-top: 3%;
     }
     .cardImage {
-        max-width: 180px;
+        max-width: 120px;
     }
   
   }
   @media all and (max-width : 640px) {
    
+    .row {
+      width: 100%;
+    }
     .card
     {
-        width:90%;
-        height: 250px;
-     
+      display: flex;
+      justify-content: center;
+      width:  100%;
+      height: 250px;
     }
+
+    .fornt {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
     .secondRow
     {
       margin-top: -9%;
@@ -359,7 +346,12 @@ body {
     }
     h3.cardTitle
     {
-     font-weight: 500;     
+      font-size: 24px;
+     font-weight: 700;     
+     text-align: center;
+    }
+    .cardImage {
+      margin: 0 auto;
     }
     .content p
     {
