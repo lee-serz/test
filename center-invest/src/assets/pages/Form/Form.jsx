@@ -61,10 +61,10 @@ const Form = () => {
                     <label htmlFor="lastName">Фамилия:</label>
                     <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} required /><br /><br />
                     </div>
-
-                    <label htmlFor="firstName">Имя:</label>
-                    <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} required /><br /><br />
-
+                    <div className={styles.blank}>
+                        <label htmlFor="firstName">Имя:</label>
+                        <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} required /><br /><br />
+                    </div>
                     <div className={styles.blank}>
                         <label htmlFor="patronymic">Отчество:</label>
                         <input type="text" id="patronymic" name="patronymic" value={formData.patronymic} onChange={handleInputChange} /><br /><br />
@@ -72,7 +72,7 @@ const Form = () => {
 
                     <div className={styles.blank}>
                         <label htmlFor="dateOfBirth">Дата рождения:</label>
-                        <input type="date" id="dateOfBirth" name="dateOfBirth" value={formData.dateOfBirth} onChange={handleInputChange} required /><br /><br />
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" value={formData.dateOfBirth} onChange={handleInputChange} required />
                     </div>
                     <div className={styles.blank}>
                         <label htmlFor="placeOfBirth">Место рождения:</label>
