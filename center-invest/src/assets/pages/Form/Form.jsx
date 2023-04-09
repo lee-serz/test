@@ -32,6 +32,10 @@ const Form = () => {
           });
       };
 
+
+
+      
+
       const handleInputChange = (e) => {
         const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -40,6 +44,23 @@ const Form = () => {
         setFormData({
           ...formData,
           [name]: value
+        });
+      };
+
+      const handleReset = () => {
+        setFormData({
+          firstName: '',
+          lastName: '',
+          patronymic: '',
+          dateOfBirth: '',
+          placeOfBirth: '',
+          phone: '',
+          email: '',
+          telegram: '',
+          specialty: '',
+          comment: '',
+          preferredRegion: '',
+          appliedBefore: false,
         });
       };
 
@@ -120,7 +141,7 @@ const Form = () => {
            </div>
            <div className={styles.buttons}>
            <Test></Test>
-            <button className={styles.btn} type="submit">Сохранить</button>
+            <button className={styles.btn} type="submit" onClick={handleReset}>Сохранить</button>
            </div>
         </form>
        

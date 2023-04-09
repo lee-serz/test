@@ -17,7 +17,7 @@ function Start(props) {
     <div className={styles.wrapper}>  
         <h1 className={styles.title}>Твой старт в IT</h1>
         <p className={styles.subtitle}>Начни свой путь в IT подразделении лучшем региональном банке</p>
-        <button onClick={scrollToTarget} className={styles.button}>Найти стажировку</button>
+        <a href="#target" className={styles.button}>Найти стажировку</a>
         <img className={styles.image} src="./start-image.png" alt="" />
     </div>
   )

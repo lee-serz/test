@@ -22,15 +22,9 @@ function Intership() {
           });
       }, []);
 
-    const targetRef = useRef(null);
-    const scrollToTarget = () => {
-    targetRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  
-
   return (
     <div className={styles.wrapper}>  
-        <h2  ref={targetRef} id={styles.target} className={styles.intership}>Стажировки</h2>
+        <h2 id={styles.target} className={styles.intership}>Стажировки</h2>
         <div className={styles.container}>
             <div className={styles.cardContainer}>
                     
