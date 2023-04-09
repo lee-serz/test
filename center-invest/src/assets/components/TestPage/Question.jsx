@@ -10,6 +10,7 @@ function Question({ question }) {
 
   return (
     <div>
+      <div>test</div>
       <h2>{question.text}</h2>
       <ul>
         {question.answerOptions.map(answerOption => (
